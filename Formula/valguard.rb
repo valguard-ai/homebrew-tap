@@ -5,28 +5,28 @@
 class Valguard < Formula
   desc "Offline validation for LLM agent output (YAML rules, no network in check)"
   homepage "https://github.com/valguard-ai/valguard"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/valguard-ai/valguard/releases/download/v0.1.1/valguard_0.1.1_darwin_amd64.tar.gz"
-      sha256 "a9b6162c97b3b3a9b07932ef54145ab95e2d51d8743da6b1c445d74cf3ef8720"
+      url "https://github.com/valguard-ai/valguard/releases/download/v0.1.2/valguard_0.1.2_darwin_amd64.tar.gz"
+      sha256 "46ade1d6a5efbabd246c42807adaa58a69ac8630f2db8e0475b550219637f4ac"
     end
     on_arm do
-      url "https://github.com/valguard-ai/valguard/releases/download/v0.1.1/valguard_0.1.1_darwin_arm64.tar.gz"
-      sha256 "0a692ef02db29555e8469b9454f49a34a5692786351b487561045bd40a20333a"
+      url "https://github.com/valguard-ai/valguard/releases/download/v0.1.2/valguard_0.1.2_darwin_arm64.tar.gz"
+      sha256 "c9c882b81a841363b5c45092eab387ccc85374558d92de2f98a10724e4d4b537"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/valguard-ai/valguard/releases/download/v0.1.1/valguard_0.1.1_linux_amd64.tar.gz"
-      sha256 "343f031c227ab9c6a86954de13fac52ba5c77da5531875f1f64912ef7f3d5a7d"
+      url "https://github.com/valguard-ai/valguard/releases/download/v0.1.2/valguard_0.1.2_linux_amd64.tar.gz"
+      sha256 "95a090498d523d40c16ebf80103291a277e8c68f2df5559f416785d18a73894c"
     end
     on_arm do
-      url "https://github.com/valguard-ai/valguard/releases/download/v0.1.1/valguard_0.1.1_linux_arm64.tar.gz"
-      sha256 "025711b2248518e3b2bb41ee28cab2a7c8d6d557c0a288c02ad2664618a4a622"
+      url "https://github.com/valguard-ai/valguard/releases/download/v0.1.2/valguard_0.1.2_linux_arm64.tar.gz"
+      sha256 "033a89008740c0693d0ce766bca4a04101383eee143829c6ce7e7ea75dcb4d2f"
     end
   end
 
@@ -35,6 +35,6 @@ class Valguard < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/valguard version")
+    assert_match "0.1.2", shell_output("#{bin}/valguard version")
   end
 end
